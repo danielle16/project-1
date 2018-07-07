@@ -1,4 +1,3 @@
-
 .logo {
     position: absolute;
     left: 0;
@@ -12,9 +11,11 @@
     margin-right: 10px;
 }
 
-.background {
-    background-image: url("assets/images");
-}
+/* .container {
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+} */
 
 h2 {
     font-weight: 100;
@@ -28,7 +29,7 @@ h2 {
     overflow: auto;
 }
 
-.summaries {
+.rating {
     margin-top: 50px; 
     height: 200px;
 } 
