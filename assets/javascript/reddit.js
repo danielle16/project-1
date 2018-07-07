@@ -43,14 +43,24 @@ $('document').ready(function(){
                                 // the div that will hold everything else
                                 var newThread = $("<div>");
                                 // added a divide to the bottom of each post. Color can be changed for styled differently.
-                                newThread.css("border-bottom", "1px solid #ee278c")
-                                newThread.css("padding-bottom", "20px")
+                                // newThread.css("border-bottom", "1px solid #ee278c")
+                                // newThread.css("padding-bottom", "20px")
+        
+
                                 // where the text goes
                                 var newHead = $("<h4>");
+                                newHead.addClass("newHeader");
+                                
+                                // This needs to be the head
+                                ("<div class='uk-width-expand'><h3 class='uk-card-title uk-margin-remove-bottom'>" + newHead + "</h3></div>");
+
+                                //This is for the link 
+                                ("<div class='uk-card-footer'> <a href='#' class='uk-button uk-button-text'></a></div>");
                                 // where the link goes
                                 var newLink = $("<a>");
+
                                 // adding some color for clarity. Color can be changed later.
-                                newLink.css("color", "#26edea")
+                                // newLink.css("color", "#26edea")
                                 // and now filling it all in
                                 newHead.html(title);
                                 newLink.attr("href", link);
@@ -60,7 +70,13 @@ $('document').ready(function(){
                                 newThread.append(newHead);
                                 newThread.append(newLink);
                                 // appending our div to the html by id
-                                $("#reddit-content").append(newThread)
+                                
+                                
+                                
+                                
+                                
+
+                                $("#reddit-content").append(newThread);
                             }
                         });
                     } 

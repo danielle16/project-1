@@ -18,6 +18,8 @@
     <script src="assets/javascript/js/uikit-icons.js"></script>
     <script src="assets/javascript/js/uikit.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- Javascript -->
     <script type="text/javascript" src="assets/javascript/main.js"></script>
     
 </head>
@@ -26,9 +28,10 @@
     <div class="search_container">
         <div class="row">
             <form class="uk-search uk-search-large text-center search_bar col-sm-12 col-md-12 col-lg-12" action="dashboard.html">
-                <span uk-search-icon></span>
+                
                 <input class="uk-search-input" type="text" placeholder="Search...">
-                <button type="submit" value="submit" id="test_button">Submit</button>
+                <button uk-search-icon type="submit" value="submit" id="test_button"></button>
+                <!-- <button type="submit" value="submit" id="test_button">Submit</button> -->
             </form>
         </div>
     </div>

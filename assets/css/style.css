@@ -12,12 +12,19 @@ body {
     top: 300px;
 }
 
+#test_button {
+    background-color: gray;
+    border: none;
+    position: relative;
+    top: 15px;
+}
+
 input[type=text] {
     width: 400px;
     height: 60px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-    opacity: 0.15;
+    opacity: 0.5;
 
 }
 
