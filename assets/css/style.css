@@ -1,9 +1,10 @@
 /* Search bar CSS */
 body {
-    background-image: url("../images/keyboard_background.jpg");
+    background-color: gray;
+    /* background-image: url("../images/keyboard_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100%; */
 }
 
 .search_bar {
@@ -25,33 +26,4 @@ input[type=text]:focus {
     height: 60px;
 }
 
-/* Dashboard CSS */
-
-/* .img_scroll {
-    width: 250px;
-    height: 250px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-h2 {
-    font-weight: 100;
-}
-
-.customer_reviews {
-    width: 60%;
-    height: 200px;
-    margin-top: 50px; 
-    margin-right: 20px;  
-}
-
-.summaries {
-    margin-top: 50px; 
-    height: 200px;
-} 
-
-.recommended {
-    margin-top: 50px;
-    margin-bottom: 50px;
-} */
 
