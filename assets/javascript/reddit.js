@@ -39,44 +39,11 @@ $('document').ready(function(){
                                 var title = subR[i].data.title
                                 // variable for a link to the post
                                 var link = "https://www.reddit.com/" + subR[i].data.permalink;
-                                // making some variables to include the elements that will need to be added to the html
-                                // the div that will hold everything else
-                                var newThread = $("<div>");
-                                // added a divide to the bottom of each post. Color can be changed for styled differently.
-                                // newThread.css("border-bottom", "1px solid #ee278c")
-                                // newThread.css("padding-bottom", "20px")
-        
 
-                                // where the text goes
-                                var newHead = $("<h4>");
-                                newHead.addClass("newHeader");
-                                
-                                // This needs to be the head
-                                ("<div class='uk-width-expand'><h3 class='uk-card-title uk-margin-remove-bottom'>" + newHead + "</h3></div>");
-
-                                //This is for the link 
-                                ("<div class='uk-card-footer'> <a href='#' class='uk-button uk-button-text'></a></div>");
-                                // where the link goes
-                                var newLink = $("<a>");
-
-                                // adding some color for clarity. Color can be changed later.
-                                // newLink.css("color", "#26edea")
-                                // and now filling it all in
-                                newHead.html(title);
-                                newLink.attr("href", link);
-                                newLink.attr("target", "blank");
-                                newLink.html("Link and Comments")
-                                // appending our elements the div
-                                newThread.append(newHead);
-                                newThread.append(newLink);
-                                // appending our div to the html by id
-                                
-                                
-                                
-                                
-                                
+                                var newThread = ("<div class='redditThread uk-card uk-card-default'><div class='uk-card-header'><div class='uk-grid-small uk-flex-middle' uk-grid><div class='uk-width-expand'><h3 class='uk-card-title uk-margin-remove-bottom redditHeader'>" + title + "</h3></div></div></div><div class='uk-card-footer'><a href=" + link + "target='blank' class='uk-button uk-button-text redditLink'>Link and Comments</a></div></div>");
 
                                 $("#reddit-content").append(newThread);
+
                             }
                         });
                     } 

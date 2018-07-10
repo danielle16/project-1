@@ -1,7 +1,34 @@
+.nav-bar {
+ background-color: #2e2e2e;
+  overflow: hidden;
+}
+
+.background {
+    background: #eee;
+    width: 100%;
+    height: 100%;
+}
+
 .logo {
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.scroll{
+    color: black;
+    background-color: black;
+}
+
+.progress_bar {
+    width: 250px;
+    background-color: rgb(38,237,234);
+}
+
+
+.rating_style {
+    font-size: 50px;
+    color: #ee278c;
 }
 
 .img_scroll {
@@ -11,31 +38,54 @@
     margin-right: 10px;
 }
 
-/* .container {
-    width: 100%;
-    height: 500px;
-    background-color: gray;
-} */
+.scroll {
+    color: white;
+}
+
+h1 {
+    color: white;
+    position: relative;
+    left: 400px;
+}
 
 h2 {
     font-weight: 100;
 }
 
-.customer_reviews {
+h3 {
+     color: #2e2e2e; 
+}
+
+.reddit_posts {
     width: 60%;
-    height: 200px;
+    height: 300px;
     margin-top: 50px; 
-    margin-right: 20px;  
+    margin-right: 70px;  
     overflow: auto;
+    background-color: #eee;
+
+}
+
+.redditThread {
+    margin-bottom: 20px;
+    /* background-color: rgb(226, 223, 223); */
+    /* border: 5px solid white; */
+}
+
+.redditLink {
+    color: rgb(38,237,234) !important;
 }
 
 .rating {
     margin-top: 50px; 
-    height: 200px;
+    height: 300px;
+    overflow: auto;
+    background-color: #eee;
 } 
 
 .recommended {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    background-color: #eee;
 }
 
