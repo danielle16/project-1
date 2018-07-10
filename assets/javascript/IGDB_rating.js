@@ -11,7 +11,7 @@ $(document).ready(function() {
        fetch(proxyUrl + targetUrl, {
          method: 'GET',
          headers: {
-             'user-key': '4247b2da41ba66b8f8b7162b5aaa3d71',
+             'user-key': 'b243c748150f43e8e7014dfae5c32ef3',
         //    'user-key': '3cd46870c24a1fcd4c922507776f80af',
            'Accept': 'application/json'
          }
@@ -22,7 +22,7 @@ $(document).ready(function() {
           rating = json[0].aggregated_rating;
      
           fixedRating = rating.toFixed(2);
-          $('.rating').html("<h3>Rating: </h3><h4 class='rating_style'>" + fixedRating + "%</h4> <progress id='js-progressbar' class='uk-progress progress_bar' value='0' max='100'></progress>");
+          $('.rating').html("<h3 class='uk-heading-bullet uk-card-title'>Rating </h3><h4>" + fixedRating + "%</h4> <progress id='js-progressbar' class='uk-progress progress_bar' value='0' max='100'></progress>");
 
     UIkit.util.ready(function () {
 

@@ -18,7 +18,7 @@ $(document).ready(function() {
         method: 'GET',
         headers: {
             // 'user-key': '4bc5a8c3105be3ab582c3c049aed2a6d',
-          'user-key': '4247b2da41ba66b8f8b7162b5aaa3d71',
+          'user-key': 'b243c748150f43e8e7014dfae5c32ef3',
           'Accept': 'application/json'
         }
       });
@@ -35,7 +35,7 @@ $(document).ready(function() {
         let response2 = await fetch(proxyUrl + targetUrl2, {
           method: 'GET',
           headers: {
-            'user-key': '4247b2da41ba66b8f8b7162b5aaa3d71',
+            'user-key': 'b243c748150f43e8e7014dfae5c32ef3',
             'Accept': 'application/json'
           }
         });
@@ -52,13 +52,10 @@ $(document).ready(function() {
         src = "https://images.igdb.com/igdb/image/upload/t_cover_small_2x/" + similarImgs[j] + ".jpg";
         divId = "recommendedGame" + j;
 
-        // $(".recommended").append("<img class='image' src='" + src + "'>");
-
-
-        var temp3 = $(".recommended").append($("<div id=" + divId + "></div>"));
-        var temp = $('#' + divId).append($("<img class='image' src='" + src + "'>"));
+        $(".recommended").append("<img class='image' src='" + src + "'>");
+        $('#' + divId).append($("<img class='image' src='" + src + "'>"));
         title = similarNames[j];
-        var temp1 = $("#" + divId).append($("<div class ='title'>" + title + "</div>"));
+        $("#" + divId).append($("<div class ='title'>" + title + "</div>"));
         
         
         // var html = ();
