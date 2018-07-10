@@ -22,6 +22,9 @@ $(document).ready(function() {
 
 });
 
+$(".game_title").append(searchTerm);
+
+
 console.log("hello");
 console.log(localStorage.getItem("key"));
 
