@@ -30,6 +30,7 @@
     <script type="text/javascript" src="assets/javascript/reddit.js"></script>
     <script type="text/javascript" src="assets/javascript/IGDB_rating.js"></script>
     <script type="text/javascript" src="assets/javascript/IGDB_recommended.js"></script>
+    <script type="text/javascript" src="assets/javascript/main.js"></script>
 
 </head>
 
@@ -42,10 +43,17 @@
                 <span class="uk-search-icon-flip" uk-search-icon></span>
                 <input class="uk-search-input" type="search" placeholder="Search...">
             </form>
-        <h1>Game Title</h1>
+        <!-- <h1 class="game_title">Game Title</h1> -->
+
+        <div class="page-header text-center">
+                <script type="text/javascript">
+                    var title = localStorage.getItem("key");
+                    $(".page-header").html("<h1>" + title.toUpperCase() + "</h1>");
+                    </script>
+            </div>
     </div>
 
-   
+  
 
     <div class="background">
     <div class="container">
@@ -77,17 +85,9 @@
                         <h3 class="uk-card-title uk-heading-bullet">Recommended Games</h3>
 
                         <!-- <div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top recommended"> -->
-                          
-                                
-                                            <div class="recommended"></div>
-                                    
-                           
-                
+                                                 
+                                            <!-- <div class="recommended"></div>    -->
                              </div>
-
-
-
-            <!-- <div class="recommended"></div> -->
 </div>
 </div>
 
