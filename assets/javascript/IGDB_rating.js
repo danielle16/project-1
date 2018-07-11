@@ -11,7 +11,7 @@ $(document).ready(function() {
        fetch(proxyUrl + targetUrl, {
          method: 'GET',
          headers: {
-             'user-key': '2f485515a05374f95ad36319a133c9c0',
+             'user-key': 'e5313449eecd55dfff2bc795bdf26d2e',
            'Accept': 'application/json'
          }
        })
@@ -21,7 +21,7 @@ $(document).ready(function() {
           rating = json[0].aggregated_rating;
      
           fixedRating = rating.toFixed(2);
-          $('.rating').html("<h3 class='uk-heading-bullet uk-card-title'>Rating </h3><h4>" + fixedRating + "%</h4> <progress id='js-progressbar' class='uk-progress progress_bar' value='0' max='100'></progress>");
+          $('.rating').html("<h3 class='uk-heading-bullet uk-card-title'>Rating </h3><h4>" + fixedRating + "%</h4> <progress id='js-progressbar' class='uk-progress progress_bar' value='0' max='100'></progress><p>**This rating is an aggregate score combining IGDB's critics rating and user based rating</p>");
 
     UIkit.util.ready(function () {
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
         var animate = setInterval(function () {
 
             bar.value += fixedRating;
-            bar.value.addRule('background-color: red;');
+
 
             if (bar.value >= bar.max) {
                 clearInterval(animate);

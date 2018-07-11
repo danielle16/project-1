@@ -4,20 +4,20 @@ $(document).ready(function() {
     var searchTerm = localStorage.getItem("key");
     var game = searchTerm;
     var idList = [];
-    var targetUrl = "https://api-endpoint.igdb.com/games/?search=" + game + "&fields=name,games&limit=5";
+    var targetUrl = "https://api-endpoint.igdb.com/games/?search=" + game + "&fields=name,games,url&limit=5"; //ADD
     var id = 0;
     var similarList = [];
     var similarImgs = [];
     var similarNames = [];
+    var similarUrl = [];
     var src = "";
     var divId = "";
-    var title = "";
  
     async function main() {
       let response = await fetch(proxyUrl + targetUrl, {
         method: 'GET',
         headers: {
-          'user-key': '2f485515a05374f95ad36319a133c9c0',
+          'user-key': 'e5313449eecd55dfff2bc795bdf26d2e',
           'Accept': 'application/json'
         }
       });
@@ -34,61 +34,36 @@ $(document).ready(function() {
         let response2 = await fetch(proxyUrl + targetUrl2, {
           method: 'GET',
           headers: {
-            'user-key': '2f485515a05374f95ad36319a133c9c0',
+            'user-key': 'e5313449eecd55dfff2bc795bdf26d2e',
             'Accept': 'application/json'
           }
         });
  
         response2 = await response2.json();
+        console.log(response2);
  
         similarNames.push(response2[0].name);
+        similarUrl.push(response2[0].url);
         localStorage.setItem("recommended", similarNames);
         similarImgs.push(response2[0].cover.cloudinary_id);
  
       }
  
       for (let j = 0; j < similarImgs.length; j++) {
-        src = "https://images.igdb.com/igdb/image/upload/t_cover_small_2x/" + similarImgs[j] + ".jpg";
+        let src = "https://images.igdb.com/igdb/image/upload/t_cover_small_2x/" + similarImgs[j] + ".jpg";
         divId = "recommendedGame" + j;
-
-        $(".recommended").append("<img class='image' src='" + src + "'>");
-        $('#' + divId).append($("<img class='image' src='" + src + "'>"));
-        title = similarNames[j];
-        $("#" + divId).append($("<div class ='title'>" + title + "</div>"));
-        
-        
-        // var html = ();
-        // $(".recommended").append(html);
-
-      
-      
-
-        // var html = ("<li><img src='" + src + "'><div class='uk-position-center uk-panel'><h1>1</h1></div></li>");
-
-      
-              
-        // var html = ("<img class='image' src='" + src + "'>");
-        // var html = ("<h5>" + title + "</h5><img class='image' src='" + src + "'>");
-        
-        
-        // var html1 = ("<div class='uk-position-relative uk-visible-toggle uk-light' uk-slider><ul class='uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m recommended'>" + html + "</ul><a class='uk-position-center-left uk-position-small uk-hidden-hover' href='#' uk-slidenav-previous uk-slider-item='previous'></a><a class='uk-position-center-right uk-position-small uk-hidden-hover' href='#' uk-slidenav-next uk-slider-item='next'></a></div>");
-
-        // $(".recommended").append(html1);
-        
-        
-        //  $("#" + divId).append($("<div class='uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom'><h3 class ='title uk-margin-remove'>" + title + "</h3>"));
-       
+        $(".recommended").append($("<div id=" + divId + " class='recommendedGame'></div>"));
+        let url = similarUrl[j];
+        $('#' + divId).append($("<a href=" + url + " target='_blank'><img src='" + src + "'></a>"));
+    
       }
-
-        temp3.append("<div class='row'><h2 class='col-sm-12 col-md-12 col-lg-12'>hello</h2></div>");
-
     }
  
-   
     main();
-
  
  });
+
+ 
 
 
 //  <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="clsActivated: uk-transition-active; center: true">
