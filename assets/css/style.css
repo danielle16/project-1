@@ -1,4 +1,8 @@
 /* Search bar CSS */
+.background {
+    height: 100vh;
+}
+
 .logo {
     display: block;
     margin-left: auto;
@@ -25,15 +29,30 @@
     top: 15px;
 }
 
+/* input::placeholder {
+    font-size: 40px;
+} */
+
 input[type=text] {
     width: 200px;
     -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    
+    transition: width 0.4s ease-in-out;  
 }
 
 input[type=text]:focus {
     width: 80%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .search_bar {
+        position: relative;
+        bottom: 130px;
+        opacity: .2;
+        width: 280px;
+        height: 60px;
+    } 
+   
 }
 
 

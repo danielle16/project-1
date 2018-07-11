@@ -6,10 +6,10 @@
 
 .background {
     background: #eee;
+    background-size: cover;
     width: 100%;
     height: 100%;
-    background-image: url("");
-    background-size: cover;
+    
 }
 
 .logo {
@@ -41,7 +41,6 @@
     width: 300px;
 }
 
-
 .img_scroll {
     width: 250px;
     height: 250px;
@@ -51,6 +50,16 @@
 
 .scroll {
     color: white;
+}
+
+.game-title {
+    font-family: 'Righteous', cursive;
+    width: 100px;
+}
+
+.page-header {
+    position: relative;
+    left: 480px;
 }
 
 h1 {
@@ -103,10 +112,33 @@ h3 {
     font-family: 'Oswald', sans-serif;
 } 
 
+.recommendedGame {
+    float: left;
+    padding: 20px;
+    height: 200px;
+    width: 20%;
+    margin-top: 80px;
+
+}
+
 .recommended {
     margin-top: 80px;
     margin-bottom: 40px;
     background-color: white;
     font-family: 'Oswald', sans-serif;
+    overflow: auto;
 }
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    .search_bar {
+        position: relative;
+        left: 100px;
+        width: 150px;
+    }
+    
+}
+
+
+
 
