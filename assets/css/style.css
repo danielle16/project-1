@@ -1,7 +1,4 @@
 /* Search bar CSS */
-body {
-    background-color: black;
-}
 .background {
      height: 100vh; 
 }
@@ -14,7 +11,6 @@ body {
 
 .search_bar {
     background-color: white;
-    /* #2e2e2e */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +19,7 @@ body {
     opacity: .2;
 } 
 
- #test_button {
+ #search_button {
     color: black;
     border: none;
     position: relative;
@@ -51,7 +47,7 @@ input[type=text]:focus {
 @media screen and (max-width: 600px) {
     .search_bar {
         position: relative;
-        bottom: 130px;
+        bottom: 110px;
         opacity: .2;
         width: 280px;
         height: 60px;
@@ -67,6 +63,5 @@ input[type=text]:focus {
         width: 30px;
     }
 }
-
 
 

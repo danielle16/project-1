@@ -17,7 +17,7 @@ $(document).ready(function() {
       let response = await fetch(proxyUrl + targetUrl, {
         method: 'GET',
         headers: {
-          'user-key': 'e5313449eecd55dfff2bc795bdf26d2e',
+          'user-key': '2c51ea111025b50b80b51509a27e5f09',
           'Accept': 'application/json'
         }
       });
@@ -34,7 +34,7 @@ $(document).ready(function() {
         let response2 = await fetch(proxyUrl + targetUrl2, {
           method: 'GET',
           headers: {
-            'user-key': 'e5313449eecd55dfff2bc795bdf26d2e',
+            'user-key': '2c51ea111025b50b80b51509a27e5f09',
             'Accept': 'application/json'
           }
         });
