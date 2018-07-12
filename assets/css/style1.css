@@ -24,7 +24,8 @@
 }
 
 .progress_bar {
-    width: 250px;
+    /* width: 250px; */
+    width: 100%;
 }
 
 .rating_style {
