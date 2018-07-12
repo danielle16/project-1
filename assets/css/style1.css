@@ -24,14 +24,19 @@
 }
 
 .progress_bar {
-    width: 250px;
-    background-color: rgb(38,237,234);
+    width: 100%;
 }
 
 .rating_style {
     font-size: 50px;
     color: #ee278c;
     font-family: 'Oswald', sans-serif;
+}
+
+.input {
+    background-color: #eee;
+    width: 250px;
+    margin-left: 20px;
 }
 
 .search_bar {
@@ -53,21 +58,11 @@
 }
 
 .game-title {
-    font-family: 'Righteous', cursive;
-    width: 100px;
-}
-
-.page-header {
-    position: relative;
-    left: 480px;
-}
-
-h1 {
     color: white;
-    position: relative;
-    left: 450px;
-    bottom: 70px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Righteous', cursive;
+    position: absolute;
+    right: 80px;
+    top: 30px;
 }
 
 h2 {
@@ -94,9 +89,9 @@ h3 {
 
 .redditThread {
     margin-bottom: 20px;
-    /* border: 5px solid white; */
     font-family: 'Oswald', sans-serif;
     background-color: rgb(247, 244, 244);
+    overflow: auto;
 }
 
 .redditLink {
@@ -118,26 +113,66 @@ h3 {
     height: 200px;
     width: 20%;
     margin-top: 80px;
-
+    margin-bottom: 20px;
 }
 
 .recommended {
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 40px;
     background-color: white;
     font-family: 'Oswald', sans-serif;
     overflow: auto;
 }
 
+#recommendedGame0,
+#recommendedGame1,
+#recommendedGame2,
+#recommendedGame3,
+#recommendedGame4 {
+    margin-top: 0px;
+}
+
 /* Media Queries */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 980px) {
+    .game-title {
+        color: white;
+        font-family: 'Righteous', cursive;
+        position: absolute;
+        font-size: 30px;
+        right: 50px;
+        top: 35px;
+    }
     .search_bar {
         position: relative;
-        left: 100px;
+        left: 30px;
+        width: 200px;
+    }
+    .input {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search_bar {
+        position: relative;
+        left: -10px;
         width: 150px;
     }
-    
+
+    .input {
+        width: 110px;
+    }
 }
+
+@media screen and (max-width: 640px) {
+    .search_bar {
+        display: none;
+    }
+    .page-header {
+        width: 0%;
+    }
+}
+
 
 
 
