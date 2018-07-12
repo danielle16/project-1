@@ -25,7 +25,6 @@
 
 .progress_bar {
     width: 250px;
-    background-color: rgb(38,237,234);
 }
 
 .rating_style {
@@ -54,7 +53,11 @@
 
 .game-title {
     font-family: 'Righteous', cursive;
-    width: 100px;
+    width: 250px;
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .page-header {
@@ -88,6 +91,15 @@ h3 {
     background-color: white;
 }
 
+.input::placeholder {
+    padding-left: 30px;
+}
+
+/* Fix search */
+/* input[type=text] {
+    width: 200px;
+} */
+
 #embed-view {
     margin-top: 40px;
 }
@@ -118,15 +130,23 @@ h3 {
     height: 200px;
     width: 20%;
     margin-top: 80px;
-
+    margin-bottom: 20px;
 }
 
 .recommended {
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 40px;
     background-color: white;
     font-family: 'Oswald', sans-serif;
     overflow: auto;
+}
+
+#recommendedGame0,
+#recommendedGame1,
+#recommendedGame2,
+#recommendedGame3,
+#recommendedGame4 {
+    margin-top: 0px;
 }
 
 /* Media Queries */

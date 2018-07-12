@@ -1,14 +1,15 @@
 /* Search bar CSS */
+body {
+    background-color: black;
+}
 .background {
-    height: 100vh;
+     height: 100vh; 
 }
 
 .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* position: relative;
-    top: 10px; */
 }
 
 .search_bar {
@@ -27,16 +28,19 @@
     border: none;
     position: relative;
     top: 15px;
+    width: 35px;
 }
 
-/* input::placeholder {
-    font-size: 40px;
-} */
+ .input::placeholder {
+    font-size: 35px;
+    color: black;
+} 
 
 input[type=text] {
     width: 200px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;  
+    color: black;
 }
 
 input[type=text]:focus {
@@ -52,7 +56,16 @@ input[type=text]:focus {
         width: 280px;
         height: 60px;
     } 
-   
+
+    .input::placeholder {
+        font-size: 30px;
+        position: relative;
+        bottom: 10px;
+    } 
+
+    #test_button {
+        width: 30px;
+    }
 }
 
 

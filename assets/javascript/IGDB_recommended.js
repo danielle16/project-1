@@ -64,21 +64,3 @@ $(document).ready(function() {
  });
 
  
-
-
-//  <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="clsActivated: uk-transition-active; center: true">
-
-//     <ul class="uk-slider-items uk-grid">
-//         <li class="uk-width-3-4">
-//             <div class="uk-panel">
-//                 <img src="../docs/images/photo.jpg" alt="">
-//                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-//                     <h3 class="uk-margin-remove">Bottom</h3>
-//                     <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//                 </div>
-//             </div>
-//         </li>
-
-// $('#' + divId).append($("<div class='uk-position-relative uk-visible-toggle uk-light' uk-slider='clsActivated: uk-transition-active; center: true'><ul class='uk-slider-items uk-grid'> <li class='uk-width-3-4'><div class='uk-panel'><img src='" + src + "'></div></li></div>"));
-// let title = similarNames[j];
-// $("#" + divId).append($("<div class='uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom'><h3 class ='title uk-margin-remove'>" + title + "</h3>"));
